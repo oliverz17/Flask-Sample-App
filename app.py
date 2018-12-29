@@ -22,4 +22,4 @@ def show_about():
     return render_template ('About.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8080) #run app in debug mode on port 5000
+    app.run(debug=True, port=8080) 
