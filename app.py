@@ -15,11 +15,11 @@ def first_visit():
 
 @app.route('/home', methods=['GET', 'POST']) #allow both GET and POST requests
 def show_home():
-    return render_template('Home.html')
+    return render_template('Home.html') #displays Home.html on route /home
 
 @app.route('/about', methods=['GET', 'POST']) #allow both GET and POST requests
 def show_about():
-    return render_template ('About.html')
+    return render_template ('About.html') #displays About.html on route /about
 
 if __name__ == '__main__':
     app.run(debug=True, port=8080) 
