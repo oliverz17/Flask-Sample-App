@@ -11,7 +11,7 @@ app = Flask(__name__, static_url_path='') #create the Flask app
 
 @app.route('/', methods=['GET', 'POST']) #allow both GET and POST requests
 def first_visit():
-    return redirect(url_for('show_home'))
+    return redirect(url_for('show_home')) #redirect to /home route
 
 @app.route('/home', methods=['GET', 'POST']) #allow both GET and POST requests
 def show_home():
