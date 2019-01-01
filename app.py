@@ -1,10 +1,7 @@
-#from __future__ import print_function
 from flask import Flask, redirect, url_for
 from flask import request
 from flask import render_template
 from werkzeug import secure_filename
-
-#put functions here
 
 
 app = Flask(__name__, static_url_path='') #create the Flask app
